@@ -3,11 +3,9 @@ module.exports = {
     env: {
         browser: true,
         node: true,
-        es2021: true
+        es2021: true,
     },
-    extends: [
-        '@weni/eslint-config/vue3', 'prettier', '@vue/eslint-config-typescript'
-    ],
+    extends: ['@weni/eslint-config/vue3', 'prettier', '@vue/eslint-config-typescript'],
     parser: 'vue-eslint-parser',
     parserOptions: {
         parser: '@typescript-eslint/parser',
@@ -21,7 +19,13 @@ module.exports = {
         'no-undef': 'off',
         'no-var': 'error',
         'prefer-const': 'error',
-        'vue/multi-word-component-names': 'off'
+        'vue/multi-word-component-names': 'off',
     },
-    ignorePatterns: ['dist/*', 'node_modules/*', '*.config.ts', '*.setup.ts', 'tests/**/*.ts']
-}; 
+    ignorePatterns: [
+        'dist/*',
+        'node_modules/*',
+        '*.config.ts',
+        '*.setup.ts',
+        'tests/**/*.ts',
+    ],
+};
